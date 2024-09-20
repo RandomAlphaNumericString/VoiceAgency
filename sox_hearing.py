@@ -9,7 +9,6 @@ import numpy as np
 
 
 ##### Send model work to this device...
-#### TODO: conditionalize with torch.cuda.is_available()
 if torch.cuda.is_available():
     torch_dtype = torch.float16 
     worker_device = "cuda:0"
